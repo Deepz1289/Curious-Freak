@@ -1,0 +1,45 @@
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        String st = in.next();
+        char ch = in.next().charAt(0);
+        System.out.println(num);
+        System.out.println(st);
+        System.out.println(ch);
+    }
+
+
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int angle1 = in.nextInt();
+        int angle2 = in.nextInt();
+        int angle3 = in.nextInt();
+        int sum = angle1+angle2+angle3;
+        if (sum == 180) {
+            System.out.println("Triangle can be formed");
+        }else{
+            System.out.println("Triangles cannot be formed");
+        }
+    }
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int mark = in.nextInt();
+        if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 80) {
+            System.out.println("Grade B");
+        } else if (mark >= 60) {
+            System.out.println("Grade C");
+        }else if (mark >= 35) {
+            System.out.println("Grade D");
+        }
+        else{
+            System.out.println("Fail");
+        }
+    }
+
+
+
+    
