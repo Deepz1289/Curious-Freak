@@ -1,0 +1,28 @@
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int count = 0;
+        while (n > 0) {
+            for (int i = 1; i <= n; i++) {
+                int ld = n % 10;
+                count++;
+                n = n / 10;
+            }
+
+        }
+        System.out.println(count);
+    }
+
+
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int count = 0;
+        for(int i = 1;i<=n;i++){
+            if(n%i==0 && 3%i==0 ){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
