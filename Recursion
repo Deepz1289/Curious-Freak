@@ -1,0 +1,146 @@
+public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int n = 345;
+        System.out.println(add(n));
+    }
+    static int add(int n){
+        if(n==0){
+            return 0;
+        }else {
+            return n%10 +  add(n / 10);
+        }
+    }
+
+}
+
+
+
+public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int n = 345899;
+        System.out.println(count(n));
+    }
+    static int count(int n){
+        if(n==0){
+            return 0;
+        }else {
+            return 1 +  count(n / 10);
+        }
+    }
+
+}
+
+
+
+
+
+public class main {
+    public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int [] n = {2,3,5,6,7,8,10};
+        printNo(n,7,0);
+    }
+    static void printNo(int[] n, int l, int i){
+        if(i>=l){
+            return ;
+        }
+
+        printNo(n,l,i+1);
+        System.out.println(n[i]);
+
+        }
+
+    }
+
+
+public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int [] n = {2,3,5,6,7,8,10};
+        System.out.println(find(n,7,0,1));
+    }
+    static int find(int[] n, int l, int i,int target){
+        if(i>=l){
+            return -1 ;
+        }
+        if(n[i]==target){
+            return i;
+        }
+        return find(n,l,i+1,target);
+        }
+
+    }
+
+
+public class main {
+    public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int [] n = {2,3,4,5,7,12,8,10};
+        System.out.println(count(n,8,0));
+    }
+    static int count(int[] n, int l, int i){
+        if(i>=l){
+            return 0;
+        }
+        return n[i] + count(n,l,i+1);
+        }
+
+    }
+
+
+
+public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int [] n = {2,3,4,5,7,8,10};
+        System.out.println(sorted(n,7,0));
+    }
+    static int sorted(int[] n, int l, int i){
+        if(i>=l-1){
+            return 1;
+        }if(n[i]>n[i+1]){
+            return 0;
+        }
+        return sorted(n,l,i+1);
+        }
+
+    }
+
+
+
+public class main {
+    public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int  n = 12;
+        divisor(n,1);
+    }
+    static void divisor(int n,  int i){
+        if(n==i){
+            System.out.println(n);
+            return;
+        }if(n%i==0){
+            System.out.println(i);;
+        }
+        divisor(n,i+1);
+        }
+
+    }
+
+
+
+ public static void main(String[] args) {
+        //Scanner in = new Scanner(System.in);
+        int  n = 2;
+        int p = 4;
+        System.out.println(divisor(n,p));
+    }
+    static int divisor(int n,  int p){
+        if(p==0){
+            return 1;
+        }
+        return n * divisor(n,p-1);
+        }
+
+    }
+
+
+
+
